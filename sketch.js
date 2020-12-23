@@ -38,7 +38,11 @@ function setup(){
  function draw() {
   background(0,0,0);
   
-   image(img6, width/2,height/2,220,200)
+  textSize(32);
+  fill( 102, 150, 255);
+  text('click↓', 350, 175); 
+  
+  image(img6, width/2,height/2,220,200)
   if((mouseX > 300) && (mouseX < 580 ) && (mouseY > 120) && (mouseY < 360)){
  
     image(img6, width/2,height/2,260,230)
@@ -57,6 +61,7 @@ function setup(){
     }
   }
 
+  
  
 image(img1, mouseX-230, mouseY-100, 220, 220);//고래
    
@@ -70,6 +75,7 @@ speed2 = speed2 * -1;
 image(img4, x, 260, 120,100);
 
 image(img5, x / 3 , 50, 120,100);
+
 
 push();
 rotate(angle);
